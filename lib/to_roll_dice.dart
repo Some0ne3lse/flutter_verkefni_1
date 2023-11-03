@@ -14,9 +14,11 @@ class _ToRollDiceState extends State<ToRollDice> {
   var currentDiceNumber = 2;
 
   void activateDice() {
-    setState(() {
-      currentDiceNumber = randomizer.nextInt(6) + 1;
-    });
+    setState(
+      () {
+        currentDiceNumber = randomizer.nextInt(6) + 1;
+      },
+    );
   }
 
   @override
@@ -33,6 +35,10 @@ class _ToRollDiceState extends State<ToRollDice> {
           onPressed: activateDice,
           style: TextButton.styleFrom(
             foregroundColor: Colors.white,
+            backgroundColor: Colors.black26,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
             textStyle: const TextStyle(
               fontSize: 28,
             ),
