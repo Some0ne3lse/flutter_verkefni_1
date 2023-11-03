@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomLeft;
 
-class AppStyle extends StatelessWidget {
-  const AppStyle(
+class GradientBackGroundContainer extends StatelessWidget {
+  const GradientBackGroundContainer(
     this.firstColor,
     this.secondColor, {
     super.key,
